@@ -1,0 +1,15 @@
+logs
+target
+bin
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/.cache
+/.history
+/RUNNING_PID
+.cache-main
+.cache-tests
+.log
+activator*
