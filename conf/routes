@@ -3,20 +3,18 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET		/							controllers.ViewController.index()
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-
-GET		/normal/question			controllers.Application.getQuestion()
-POST	/normal/answer				controllers.Application.answer()
-
-POST	/normal/question			controllers.Application.addQuestion()
-DELETE	/normal/question/:id		controllers.Application.deleteQuestion(id:Integer)
-
-PUT		/normal/question/:id		controllers.Application.updateQuestion(id:Integer)
-
-GET		/normal/question/:id		controllers.Application.getQuestionById(id:Integer)
-
-GET		/normal/questions			controllers.Application.getAllQuestions()
+# API
+GET		/normal/question			controllers.QuestionController.getQuestion()
+POST	/normal/answer				controllers.QuestionController.answer()
+POST	/normal/question			controllers.QuestionController.addQuestion()
+DELETE	/normal/question/:id		controllers.QuestionController.deleteQuestion(id:Integer)
+PUT		/normal/question/:id		controllers.QuestionController.updateQuestion(id:Integer)
+GET		/normal/question/:id		controllers.QuestionController.getQuestionById(id:Integer)
+GET		/normal/questions			controllers.QuestionController.getAllQuestions()
