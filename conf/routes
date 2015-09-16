@@ -4,7 +4,7 @@
 
 # Home page
 GET		/							controllers.ViewController.index()
-
+GET		/question					controllers.ViewController.getQuestion()
 
 
 # Map static resources from the /public folder to the /assets URL path

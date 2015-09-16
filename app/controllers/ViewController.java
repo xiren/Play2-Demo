@@ -9,4 +9,8 @@ public class ViewController extends Controller{
     public Result index(){
         return ok(index.render());
     }
+    
+    public Result getQuestion(){
+        return ok(main.render());
+    }
 }
